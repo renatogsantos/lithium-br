@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <>
       <main>
+        <img src="/elipse-1.png" alt="elipse-azul" draggable={false} className="elipse-1" />
         <Container fluid className="py-5 hero-1">
           <Container>
             <Row>
@@ -27,9 +28,6 @@ export default function Home() {
                     />
                   </div>
                 </div>
-              </Col>
-              <Col className="d-none d-xl-flex align-items-end justify-content-end">
-                <span className="f-96">2023</span>
               </Col>
             </Row>
           </Container>
