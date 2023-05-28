@@ -1,6 +1,6 @@
 "use client";
 import ButtonPrimary from "@/components/buttons/ButtonPrimary";
-import { ArrowRight } from "@phosphor-icons/react";
+import { ArrowRight, CaretDoubleDown } from "@phosphor-icons/react";
 import Link from "next/link";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -8,7 +8,19 @@ export default function Home() {
   return (
     <>
       <main>
-        <img src="/elipse-1.png" alt="elipse-azul" draggable={false} className="elipse-1" />
+        <img
+          src="/elipse-1.png"
+          alt="elipse-azul"
+          draggable={false}
+          className="elipse-1"
+        />
+        <a
+          href="mailto:lithium@gmail.com"
+          rel="noreferrer"
+          className="email-right-screen f-12"
+        >
+          lithium@gmail.com
+        </a>
         <Container fluid className="py-5 hero-1">
           <Container>
             <Row>
@@ -32,10 +44,13 @@ export default function Home() {
             </Row>
           </Container>
         </Container>
+        <div className="w-100 d-flex justify-content-center py-5">
+          <CaretDoubleDown size={32} color="#fff" />
+        </div>
       </main>
 
       <section>
-        <Container>
+        <Container fluid className="py-5">
           <Container>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ex
             commodi quo impedit illum repudiandae expedita omnis laudantium

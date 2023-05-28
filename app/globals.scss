@@ -20,9 +20,9 @@ body {
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  height: 100dvh;
-  @media screen and (max-width: 1024px){
-    background-position: center ;
+  height: 90dvh;
+  @media screen and (max-width: 1024px) {
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -47,4 +47,19 @@ body {
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(15px);
   border-radius: 32px;
+}
+
+.email-right-screen {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  color: #ffffff70;
+  &:hover {
+    color: #fff;
+  }
 }
