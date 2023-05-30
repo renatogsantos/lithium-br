@@ -20,17 +20,24 @@
   line-height: 120%;
 }
 
+.f-64 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 120%;
+}
+
 .f-96 {
   font-style: normal;
   font-weight: 600;
-  font-size: 96px;
+  font-size: clamp(2.625rem, 5vw, 6rem);
   line-height: 120%;
 }
 
 .title {
   font-style: normal;
   font-weight: 600;
-  font-size: clamp(42px, 5vw, 96px);
+  font-size: clamp(2.625rem, 5vw, 6rem);
   line-height: 120%;
   letter-spacing: 0.15em;
 }

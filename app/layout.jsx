@@ -1,3 +1,5 @@
+"use client";
+import { ParallaxProvider } from "react-scroll-parallax";
 import "./globals.scss";
 
 export default function RootLayout({ children }) {
@@ -6,7 +8,9 @@ export default function RootLayout({ children }) {
       <head>
         <title>lithium</title>
       </head>
-      <body>{children}</body>
+      <ParallaxProvider>
+        <body>{children}</body>
+      </ParallaxProvider>
     </html>
   );
 }
