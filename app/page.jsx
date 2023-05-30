@@ -170,8 +170,6 @@ export default function Home() {
             <Row className="align-items-center">
               <Col sm="12" xl="4" className="p-4">
                 <Parallax
-                  startScroll={1024}
-                  endScroll={2000}
                   translateX={["-200px", "50px"]}
                   scale={[0.2, 1.2]}
                   rotate={[-35, 15]}
