@@ -9,7 +9,7 @@
 .f-16 {
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: clamp(12px, 5vw, 1rem);
   line-height: 120%;
 }
 
