@@ -107,3 +107,27 @@ body {
     height: fit-content;
   }
 }
+
+.ipads-bg {
+  background: url("/bg-ipads.jpg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  @media screen and (max-width: 1024px) {
+    background-size: cover;
+    height: fit-content;
+  }
+}
+
+.macs-bg {
+  background: url("/bg-macs.jpg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  @media screen and (max-width: 1024px) {
+    background-size: cover;
+    height: fit-content;
+  }
+}

@@ -170,9 +170,15 @@ export default function Home() {
             <Row className="align-items-center">
               <Col sm="12" xl="4" className="p-4">
                 <Parallax
-                  translateX={["-200px", "50px"]}
-                  scale={[0.2, 1.2]}
-                  rotate={[-35, 15]}
+                  translateX={["-500px", "0px"]}
+                  scale={[0.2, 1.1]}
+                  rotate={[-65, 0]}
+                  rootMargin={{
+                    top: 10000,
+                    right: 1000,
+                    bottom: 10,
+                    left: 1000,
+                  }}
                   easing="easeInQuad"
                 >
                   <img
@@ -220,38 +226,80 @@ export default function Home() {
         </Container>
       </section>
 
-      <section>
-        <Container fluid className="py-5">
+      <section className="ipads-bg">
+        <Container fluid className="py-5 m-0 d-flex align-items-center h-100">
           <Container className="py-5">
             <Row>
               <Col>
-                <div className="main-card p-5">
-                  <h2 className="f-64">IPADS</h2>
-                  <p className="f-16">
-                    Prepare-se para uma nova forma de explorar o mundo digital
-                    com o iPad.Dispositivos que combinam elegância,
-                    portabilidade e desempenho excepcional.
-                  </p>
-                  <p className="f-16">
-                    Com uma tela impressionante e tecnologia avançada, os
-                    tablets da Apple oferecem uma experiência imersiva em jogos,
-                    entretenimento e produtividade.
-                  </p>
-                  <p className="f-16">
-                    Seja nos estudos, no trabalho ou nos momentos de descanso,
-                    os iPads são a escolha ideal em qualquer situação.
-                    Desbloqueie seu potencial ilimitado, onde o futuro está ao
-                    seu alcance com um simples toque.
-                  </p>
-                  <div className="d-flex align-items-center justify-content-between">
-                    <ButtonPrimary
-                      title="acessar"
-                      link="#"
-                      icon={<ArrowRight size={24} />}
-                    />
-                    <ButtonPlay link="#" icon={<Play size={28} />} />
+                <Parallax translateY={["-100px", "100px"]}>
+                  <div className="main-card p-5">
+                    <h2 className="f-64">IPADS</h2>
+                    <p className="f-16">
+                      Prepare-se para uma nova forma de explorar o mundo digital
+                      com o iPad.Dispositivos que combinam elegância,
+                      portabilidade e desempenho excepcional.
+                    </p>
+                    <p className="f-16">
+                      Com uma tela impressionante e tecnologia avançada, os
+                      tablets da Apple oferecem uma experiência imersiva em
+                      jogos, entretenimento e produtividade.
+                    </p>
+                    <p className="f-16">
+                      Seja nos estudos, no trabalho ou nos momentos de descanso,
+                      os iPads são a escolha ideal em qualquer situação.
+                      Desbloqueie seu potencial ilimitado, onde o futuro está ao
+                      seu alcance com um simples toque.
+                    </p>
+                    <div className="d-flex align-items-center justify-content-between">
+                      <ButtonPrimary
+                        title="acessar"
+                        link="#"
+                        icon={<ArrowRight size={24} />}
+                      />
+                      <ButtonPlay link="#" icon={<Play size={28} />} />
+                    </div>
                   </div>
-                </div>
+                </Parallax>
+              </Col>
+            </Row>
+          </Container>
+        </Container>
+      </section>
+
+      <section className="macs-bg">
+        <Container fluid className="py-5 m-0 d-flex align-items-center h-100">
+          <Container className="py-5">
+            <Row>
+              <Col sm="12" xl="7">
+                <Parallax translateY={["-100px", "100px"]}>
+                  <div className="main-card p-5">
+                    <h2 className="f-64">MACS</h2>
+                    <p className="f-16">
+                      Prepare-se para uma nova forma de explorar o mundo digital
+                      com o iPad.Dispositivos que combinam elegância,
+                      portabilidade e desempenho excepcional.
+                    </p>
+                    <p className="f-16">
+                      Com uma tela impressionante e tecnologia avançada, os
+                      tablets da Apple oferecem uma experiência imersiva em
+                      jogos, entretenimento e produtividade.
+                    </p>
+                    <p className="f-16">
+                      Seja nos estudos, no trabalho ou nos momentos de descanso,
+                      os iPads são a escolha ideal em qualquer situação.
+                      Desbloqueie seu potencial ilimitado, onde o futuro está ao
+                      seu alcance com um simples toque.
+                    </p>
+                    <div className="d-flex align-items-center justify-content-between">
+                      <ButtonPrimary
+                        title="acessar"
+                        link="#"
+                        icon={<ArrowRight size={24} />}
+                      />
+                      <ButtonPlay link="#" icon={<Play size={28} />} />
+                    </div>
+                  </div>
+                </Parallax>
               </Col>
             </Row>
           </Container>
