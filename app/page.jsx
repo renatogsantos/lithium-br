@@ -49,7 +49,7 @@ export default function Home() {
           <Container className="py-5">
             <Row>
               <Col sm="12" xl="7">
-                <Parallax translateY={["-0px", "130px"]}>
+                <Parallax translateY={["-120px", "120px"]}>
                   <div className="main-card p-5">
                     <h2 className="f-32">Prazer, somos a</h2>
                     <h1 className="title">LITHIUM</h1>
@@ -192,7 +192,7 @@ export default function Home() {
                   />
                 </Parallax>
               </Col>
-              <Col sm="12" xl="8">
+              <Col sm="12" xl="8" className="p-5">
                 <h2 className="f-64">IPHONES</h2>
                 <p className="f-16">
                   Descubra o mundo de possibilidades ao seu alcance com o
