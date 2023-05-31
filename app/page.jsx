@@ -7,25 +7,17 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Parallax } from "react-scroll-parallax";
+import ScrollReveal from "scrollreveal";
 
 export default function Home() {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
   useEffect(() => {
-    const checkScreenWidth = () => {
-      setIsSmallScreen(window.innerWidth < 1024);
-    };
-
-    // Verifica a largura da tela sempre que o redimensionamento ocorrer
-    window.addEventListener("resize", checkScreenWidth);
-
-    // Executa a verificação inicial quando o componente é montado
-    checkScreenWidth();
-
-    // Remove o ouvinte de redimensionamento quando o componente é desmontado
-    return () => {
-      window.removeEventListener("resize", checkScreenWidth);
-    };
+    ScrollReveal().reveal(".my-element", {
+      // Opções de configuração do ScrollReveal
+      duration: 2000,
+      distance: "50px",
+      easing: "ease-out",
+      // ...outras opções
+    });
   }, []);
 
   return (
@@ -114,6 +106,57 @@ export default function Home() {
                 </Row>
               </div>
             </Parallax>
+          </Container>
+        </Container>
+      </section>
+
+      <section className="vantagens-bg">
+        <Container fluid className="py-5 m-0 d-flex align-items-center h-100">
+          <Container className="py-5">
+            <Row className="align-items-center">
+              <Col className="py-5 py-lg-2">
+                <Parallax translateY={["-100px", "100px"]}>
+                  <div className="main-card p-5 my-3">
+                    <h2 className="f-32">Vantagens</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam velit est possimus aut doloribus quisquam hic
+                      voluptatum? Voluptatum quae, iusto modi quasi dolores
+                      quaerat laboriosam quidem tempore ullam maxime
+                      perferendis!
+                    </p>
+                  </div>
+                </Parallax>
+              </Col>
+              <Col className="py-5 py-lg-2">
+                <Parallax translateY={["-130px", "130px"]}>
+                  <div className="main-card p-5 my-3">
+                    <h2 className="f-32">Vantagens</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam velit est possimus aut doloribus quisquam hic
+                      voluptatum? Voluptatum quae, iusto modi quasi dolores
+                      quaerat laboriosam quidem tempore ullam maxime
+                      perferendis!
+                    </p>
+                  </div>
+                </Parallax>
+              </Col>
+              <Col className="py-5 py-lg-2">
+                <Parallax translateY={["-160px", "160px"]}>
+                  <div className="main-card p-5 my-3">
+                    <h2 className="f-32">Vantagens</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam velit est possimus aut doloribus quisquam hic
+                      voluptatum? Voluptatum quae, iusto modi quasi dolores
+                      quaerat laboriosam quidem tempore ullam maxime
+                      perferendis!
+                    </p>
+                  </div>
+                </Parallax>
+              </Col>
+            </Row>
           </Container>
         </Container>
       </section>

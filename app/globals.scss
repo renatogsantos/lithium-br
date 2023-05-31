@@ -96,6 +96,18 @@ body {
   }
 }
 
+.vantagens-bg {
+  background: url("/vantagens-bg.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  @media screen and (max-width: 1024px) {
+    background-size: cover;
+    height: fit-content;
+  }
+}
+
 .macbooks-bg {
   background: url("/bg-macbooks.jpg");
   background-position: center center;
