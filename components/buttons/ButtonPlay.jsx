@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ButtonPlay({ type, link, title, icon, onClick }) {
+export default function ButtonPlay({ type, link, title, icon, onClick, target }) {
   return (
     <>
       {type && (
@@ -10,6 +10,7 @@ export default function ButtonPlay({ type, link, title, icon, onClick }) {
           type={type}
           onClick={onClick}
           title={title}
+          target={target}
         >
           {icon}
         </button>
@@ -21,6 +22,7 @@ export default function ButtonPlay({ type, link, title, icon, onClick }) {
           href={link}
           onClick={onClick}
           title={title}
+          target={target}
         >
           {icon}
         </Link>

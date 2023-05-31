@@ -154,7 +154,11 @@ export default function Home() {
                         link="#"
                         icon={<ArrowRight size={24} />}
                       />
-                      <ButtonPlay link="#" icon={<Play size={28} />} />
+                      <ButtonPlay
+                        link="https://youtu.be/jwmS1gc9S5A?list=PLHFlHpPjgk714Wqve10unWDzDIo4HVAI8"
+                        target="_blank"
+                        icon={<Play size={28} />}
+                      />
                     </div>
                   </div>
                 </Parallax>
@@ -218,7 +222,11 @@ export default function Home() {
                     link="#"
                     icon={<ArrowRight size={24} />}
                   />
-                  <ButtonPlay link="#" icon={<Play size={28} />} />
+                  <ButtonPlay
+                    link="https://youtu.be/WuEH265pUy4?list=PLHFlHpPjgk706qEJf9fkclIhdhTkH49Tb"
+                    target="_blank"
+                    icon={<Play size={28} />}
+                  />
                 </div>
               </Col>
             </Row>
@@ -256,7 +264,11 @@ export default function Home() {
                         link="#"
                         icon={<ArrowRight size={24} />}
                       />
-                      <ButtonPlay link="#" icon={<Play size={28} />} />
+                      <ButtonPlay
+                        link="https://youtu.be/I-t2mwrYc6s?list=PLHFlHpPjgk71PWgLPtTl51crrA2dp777g"
+                        target="_blank"
+                        icon={<Play size={28} />}
+                      />
                     </div>
                   </div>
                 </Parallax>
