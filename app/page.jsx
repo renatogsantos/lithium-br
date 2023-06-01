@@ -3,23 +3,12 @@ import ButtonPlay from "@/components/buttons/ButtonPlay";
 import ButtonPrimary from "@/components/buttons/ButtonPrimary";
 import Notch from "@/components/notch/Notch";
 import { ArrowRight, CaretDoubleDown, Play } from "@phosphor-icons/react";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Parallax } from "react-scroll-parallax";
-import ScrollReveal from "scrollreveal";
 
 export default function Home() {
-  useEffect(() => {
-    ScrollReveal().reveal(".my-element", {
-      // Opções de configuração do ScrollReveal
-      duration: 2000,
-      distance: "50px",
-      easing: "ease-out",
-      // ...outras opções
-    });
-  }, []);
-
+ 
   return (
     <>
       <Notch />
