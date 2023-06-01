@@ -120,10 +120,9 @@ export default function Home() {
                     <h2 className="f-32">Vantagens</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsam velit est possimus aut doloribus quisquam hic
-                      voluptatum? Voluptatum quae, iusto modi quasi dolores
-                      quaerat laboriosam quidem tempore ullam maxime
-                      perferendis!
+                      Suscipit debitis eum molestiae beatae voluptate maiores
+                      doloremque porro, omnis non consequuntur culpa tempora
+                      voluptatibus minima commodi sapiente ratione odit.
                     </p>
                   </div>
                 </Parallax>
@@ -133,11 +132,10 @@ export default function Home() {
                   <div className="main-card p-5 my-3">
                     <h2 className="f-32">Vantagens</h2>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsam velit est possimus aut doloribus quisquam hic
-                      voluptatum? Voluptatum quae, iusto modi quasi dolores
-                      quaerat laboriosam quidem tempore ullam maxime
-                      perferendis!
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolores, cumque doloremque. Similique ea porro amet a,
+                      culpa voluptatum voluptatibus veritatis dolore? Excepturi
+                      ratione molestias minima magnam voluptatem at quam nemo.
                     </p>
                   </div>
                 </Parallax>
@@ -148,10 +146,9 @@ export default function Home() {
                     <h2 className="f-32">Vantagens</h2>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsam velit est possimus aut doloribus quisquam hic
-                      voluptatum? Voluptatum quae, iusto modi quasi dolores
-                      quaerat laboriosam quidem tempore ullam maxime
-                      perferendis!
+                      Atque natus itaque minus fugiat eius non illum ducimus
+                      ipsum dolorum ipsam fuga sequi laboriosam pariatur
+                      laborum, quod ab alias cupiditate molestiae?
                     </p>
                   </div>
                 </Parallax>
