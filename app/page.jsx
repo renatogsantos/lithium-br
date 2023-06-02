@@ -316,7 +316,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="macs-bg">
+      <section className="watch-bg">
         <Container fluid className="py-5 m-0 d-flex align-items-center h-100">
           <Container className="py-5">
             <Row>
@@ -368,7 +368,11 @@ export default function Home() {
                         link="#"
                         icon={<ArrowRight size={24} />}
                       />
-                      <ButtonPlay link="#" icon={<Play size={28} />} />
+                      <ButtonPlay
+                        link="https://youtu.be/UfawgQJICU8"
+                        target="_blank"
+                        icon={<Play size={28} />}
+                      />
                     </div>
                   </div>
                 </Parallax>

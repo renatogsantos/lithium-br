@@ -188,6 +188,18 @@ body {
   }
 }
 
+.watch-bg {
+  background: url("/bg-watch.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  @media screen and (max-width: 1024px) {
+    background-size: cover;
+    height: fit-content;
+  }
+}
+
 .dots-right {
   position: fixed;
   right: 10px;
