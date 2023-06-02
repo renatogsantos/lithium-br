@@ -14,6 +14,32 @@ body {
   scroll-behavior: smooth;
 }
 
+.btn-whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: linear-gradient(
+    60.69deg,
+    rgba(100, 152, 80, 0.7) 0%,
+    rgba(167, 240, 176, 0.7) 100%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 100px;
+  color: #fff;
+  padding: 8px;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    color: #fff;
+  }
+}
+
 .hero-1 {
   background: url("/hero-1.png");
   background-position: right bottom;
@@ -50,6 +76,23 @@ body {
   backdrop-filter: blur(15px);
   border-radius: 32px;
   overflow: hidden;
+}
+
+.card-hover {
+  background: linear-gradient(
+    60.69deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(6, 19, 35, 0.44) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 32px;
+  overflow: hidden;
+  transition: 0.2s cubic-bezier(0.37, -0.33, 0.42, 2);
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .email-right-screen {
@@ -102,7 +145,7 @@ body {
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100dvh;
+  height: 80dvh;
   @media screen and (max-width: 1024px) {
     background-size: cover;
     height: fit-content;
@@ -143,4 +186,20 @@ body {
     background-size: cover;
     height: fit-content;
   }
+}
+
+.dots-right {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  opacity: 0.3;
+  width: 15%;
+}
+
+.dots-left {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  opacity: 0.3;
+  width: 15%;
 }

@@ -1,8 +1,16 @@
 "use client";
 import ButtonPlay from "@/components/buttons/ButtonPlay";
 import ButtonPrimary from "@/components/buttons/ButtonPrimary";
+import ButtonWhatsapp from "@/components/buttons/ButtonWhatsapp";
 import Notch from "@/components/notch/Notch";
-import { ArrowRight, CaretDoubleDown, Play } from "@phosphor-icons/react";
+import {
+  ArrowRight,
+  CaretDoubleDown,
+  CreditCard,
+  HandCoins,
+  Handbag,
+  Play,
+} from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Parallax } from "react-scroll-parallax";
@@ -104,42 +112,36 @@ export default function Home() {
       <section className="vantagens-bg">
         <Container fluid className="py-5 m-0 d-flex align-items-center h-100">
           <Container className="py-5">
-            <Row className="align-items-center">
+            <Row className="d-flex align-items-center">
               <Col className="py-5 py-lg-2">
                 <Parallax translateY={["-100px", "100px"]}>
-                  <div className="main-card p-5 my-3">
-                    <h2 className="f-32">Vantagens</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Suscipit debitis eum molestiae beatae voluptate maiores
-                      doloremque porro, omnis non consequuntur culpa tempora
-                      voluptatibus minima commodi sapiente ratione odit.
+                  <div className="card-hover p-5 my-3">
+                    <CreditCard size={64} />
+                    <p className="f-16 mt-4">
+                      Oferecemos parcelamento em até 12 vezes com as melhores
+                      taxas do mercado.
                     </p>
                   </div>
                 </Parallax>
               </Col>
               <Col className="py-5 py-lg-2">
                 <Parallax translateY={["-130px", "130px"]}>
-                  <div className="main-card p-5 my-3">
-                    <h2 className="f-32">Vantagens</h2>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Dolores, cumque doloremque. Similique ea porro amet a,
-                      culpa voluptatum voluptatibus veritatis dolore? Excepturi
-                      ratione molestias minima magnam voluptatem at quam nemo.
+                  <div className="card-hover p-5 my-3">
+                    <HandCoins size={64} />
+                    <p className="f-16 mt-4">
+                      Oferecemos preços competitivos, significativamente abaixo
+                      da média do mercado.
                     </p>
                   </div>
                 </Parallax>
               </Col>
               <Col className="py-5 py-lg-2">
-                <Parallax translateY={["-160px", "160px"]}>
-                  <div className="main-card p-5 my-3">
-                    <h2 className="f-32">Vantagens</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Atque natus itaque minus fugiat eius non illum ducimus
-                      ipsum dolorum ipsam fuga sequi laboriosam pariatur
-                      laborum, quod ab alias cupiditate molestiae?
+                <Parallax translateY={["-100px", "100px"]}>
+                  <div className="card-hover p-5 my-3">
+                    <Handbag size={64} />
+                    <p className="f-16 mt-4">
+                      Consultoria personalizada especializada para auxiliá-lo na
+                      busca pelo melhor dispositivo.
                     </p>
                   </div>
                 </Parallax>
@@ -411,6 +413,9 @@ export default function Home() {
           </Container>
         </Container>
       </section>
+      <ButtonWhatsapp />
+      <img src="/svgs/dots.svg" className="dots-right slide-top" alt="dots" />
+      <img src="/svgs/dots.svg" className="dots-left slide-top" alt="dots" />
     </>
   );
 }
