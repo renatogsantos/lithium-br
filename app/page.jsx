@@ -41,7 +41,7 @@ export default function Home() {
                     <div>
                       <ButtonPrimary
                         title="saiba mais"
-                        link="#"
+                        link="#about"
                         icon={<ArrowRight size={24} />}
                       />
                     </div>
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </main>
 
-      <section>
+      <section id="about">
         <Container fluid className="py-5">
           <Container className="py-5">
             <Parallax translateY={["-100px", "100px"]}>
@@ -215,7 +215,7 @@ export default function Home() {
                   easing="easeInQuad"
                 >
                   <img
-                    src="/iphone-13.png"
+                    src="/iphone-14-pro.png"
                     alt="Iphone 13 - Celular Apple"
                     width="100%"
                   />
