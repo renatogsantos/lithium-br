@@ -8,7 +8,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Parallax } from "react-scroll-parallax";
 
 export default function Home() {
- 
   return (
     <>
       <Notch />
@@ -39,11 +38,14 @@ export default function Home() {
                       com preços justos e atendimento personalizado.
                     </p>
                     <div>
-                      <ButtonPrimary
-                        title="saiba mais"
-                        link="#about"
-                        icon={<ArrowRight size={24} />}
-                      />
+                      <a
+                        href="#about"
+                        className="button-primary"
+                        rel="noreferrer"
+                      >
+                        <span className="me-3 me-lg-5">saiba mais</span>{" "}
+                        <ArrowRight size={24} />
+                      </a>
                     </div>
                   </div>
                 </Parallax>
@@ -163,9 +165,9 @@ export default function Home() {
                     </p>
                     <p className="f-16">
                       Seja você um estudante, um profissional criativo ou um
-                      entusiasta da tecnologia, os MacBooks são a escolha ideal
-                      para impulsionar sua produtividade e levar sua
-                      criatividade a novos patamares.
+                      entusiasta da tecnologia, aqui na Lithium te ajudaremos à
+                      escolher o MacBook ideal para impulsionar sua
+                      produtividade e levar sua criatividade a novos patamares.
                     </p>
                     <p className="f-16">
                       Desfrute da liberdade de um sistema operacional intuitivo,
@@ -224,7 +226,7 @@ export default function Home() {
               <Col sm="12" xl="8" className="p-5">
                 <h2 className="f-64">IPHONES</h2>
                 <p className="f-16">
-                  Descubra o mundo de possibilidades ao seu alcance com o
+                  Descubra um mundo de possibilidades ao seu alcance com o
                   iPhone. Tendencia no mercado de smartphones, oferecem um
                   equilíbrio perfeito entre estilo, desempenho e funcionalidade.
                 </p>
@@ -240,10 +242,9 @@ export default function Home() {
                   de dados de ponta a ponta.
                 </p>
                 <p className="f-16">
-                  Seja para fins profissionais, entretenimento ou registrar
-                  momentos especiais, os iPhones são a escolha definitiva para
-                  os entusiastas da tecnologia. Descubra o poder da inovação na
-                  palma da sua mão!
+                  Seja para fins profissionais, entretenimento ou apenas
+                  registrar momentos especiais, nós da Lithium estamos prontos
+                  para te ajudar na escolha do seu iPhones ideal.
                 </p>
                 <div className="d-flex align-items-center justify-content-between">
                   <ButtonPrimary
@@ -273,8 +274,11 @@ export default function Home() {
                     <h2 className="f-64">IPADS</h2>
                     <p className="f-16">
                       Prepare-se para uma nova forma de explorar o mundo digital
-                      com o iPad.Dispositivos que combinam elegância,
-                      portabilidade e desempenho excepcional.
+                      com o iPad.
+                    </p>
+                    <p className="f-16">
+                      Dispositivos que combinam elegância, portabilidade e
+                      desempenho excepcional.
                     </p>
                     <p className="f-16">
                       Com uma tela impressionante e tecnologia avançada, os
@@ -283,7 +287,10 @@ export default function Home() {
                     </p>
                     <p className="f-16">
                       Seja nos estudos, no trabalho ou nos momentos de descanso,
-                      os iPads são a escolha ideal em qualquer situação.
+                      a equipe Lithium está aqui para mostrar que o iPad é a
+                      escolha ideal para qualquer função.
+                    </p>
+                    <p className="f-16">
                       Desbloqueie seu potencial ilimitado, onde o futuro está ao
                       seu alcance com um simples toque.
                     </p>
@@ -314,22 +321,44 @@ export default function Home() {
               <Col sm="12" xl="7">
                 <Parallax translateY={["-100px", "100px"]}>
                   <div className="main-card p-5">
-                    <h2 className="f-64">MACS</h2>
+                    <h2 className="f-64">APPLE WATCH</h2>
                     <p className="f-16">
-                      Prepare-se para uma nova forma de explorar o mundo digital
-                      com o iPad.Dispositivos que combinam elegância,
-                      portabilidade e desempenho excepcional.
+                      Descubra o Apple Watch, o dispositivo que redefine a
+                      tecnologia vestível.
                     </p>
                     <p className="f-16">
-                      Com uma tela impressionante e tecnologia avançada, os
-                      tablets da Apple oferecem uma experiência imersiva em
-                      jogos, entretenimento e produtividade.
+                      Com seu design elegante e sofisticado, o Apple Watch
+                      oferece a possibilidade de personalização com uma
+                      variedade de pulseiras exclusivas, permitindo que você
+                      combine estilo, funcionalidade e conveniência em um único
+                      dispositivo.
                     </p>
                     <p className="f-16">
-                      Seja nos estudos, no trabalho ou nos momentos de descanso,
-                      os iPads são a escolha ideal em qualquer situação.
-                      Desbloqueie seu potencial ilimitado, onde o futuro está ao
-                      seu alcance com um simples toque.
+                      Prepare-se para uma experiência além da imaginação, com
+                      recursos avançados de monitoramento de atividades.
+                      Controle sua frequência cardíaca, conte seus passos,
+                      rastreie seus exercícios e acompanhe as calorias
+                      queimadas. E isso é apenas o começo! O Apple Watch também
+                      apresenta recursos inovadores, como detecção de quedas e
+                      ECG, para garantir sua segurança e bem-estar.
+                    </p>
+                    <p className="f-16">
+                      A integração perfeita com o ecossistema da Apple permite
+                      que você receba notificações, responda mensagens, atenda
+                      chamadas e controle diversas funções do seu telefone
+                      diretamente no seu pulso. Aumente sua produtividade com a
+                      ajuda do assistente de voz Siri, gerencie sua agenda,
+                      receba lembretes, reproduza música e faça pagamentos com o
+                      Apple Pay, tudo isso sem tirar o telefone do bolso.
+                    </p>
+                    <p className="f-16">
+                      Mantenha-se conectado em qualquer lugar com recursos de
+                      conectividade, como Wi-Fi e Bluetooth, mesmo quando o seu
+                      telefone não estiver por perto.
+                    </p>
+                    <p className="f-16">
+                      Eleve seu estilo, potencialize suas atividades e aproveite
+                      a comodidade em todas as áreas da sua vida.
                     </p>
                     <div className="d-flex align-items-center justify-content-between">
                       <ButtonPrimary
@@ -343,6 +372,42 @@ export default function Home() {
                 </Parallax>
               </Col>
             </Row>
+          </Container>
+        </Container>
+      </section>
+
+      <section>
+        <Container fluid>
+          <Container className="d-flex flex-column align-items-center">
+            <img
+              src="/apple-products.png"
+              width="350"
+              alt=""
+              draggable={false}
+            />
+            <div className="text-center py-5">
+              <p className="f-16">
+                Além disso, sabemos o quão importante é encontrar o equilíbrio
+                entre qualidade e valor, então estamos comprometidos em garantir
+                que você obtenha o melhor custo-benefício possível, nos
+                esforçamos para tornar a tecnologia acessível a todos.
+              </p>
+              <p className="f-16">
+                No entanto, na Lithium, nossa dedicação vai além de produtos
+                excepcionais. Nossa equipe de atendimento está pronta para te
+                auxiliar em cada etapa da sua jornada de compra. Temos
+                profissionais experientes e entusiasmados, prontos para
+                responder a todas as suas perguntas e fornecer orientações
+                personalizadas, garantindo que você faça a escolha certa.
+              </p>
+              <p className="f-16">
+                Então, mergulhe no mundo da Lithium e descubra uma nova era de
+                tecnologia e inovação. Estamos ansiosos para acompanhá-lo(a)
+                nessa jornada e oferecer o melhor em produtos Apple com preços
+                justos e atendimento exemplar. Seja bem-vindo(a) à Lithium, onde
+                a sua satisfação é a nossa prioridade.
+              </p>
+            </div>
           </Container>
         </Container>
       </section>
