@@ -6,7 +6,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta
           name="description"
           content="Loja de tecnologia com produtos Apple. Experiência de compra excepcional, expertise em produtos Apple e garantia de qualidade."
