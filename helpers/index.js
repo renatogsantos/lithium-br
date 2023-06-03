@@ -1,6 +1,6 @@
 export function criarLinkWhatsApp(mensagem) {
   mensagem = encodeURIComponent(mensagem);
-  const numeroTelefone = "5511964159987";
+  const numeroTelefone = "5511986213371";
   const linkWhatsApp = `https://api.whatsapp.com/send?phone=${numeroTelefone}&text=${mensagem}`;
 
   return linkWhatsApp;
