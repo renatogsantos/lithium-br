@@ -3,6 +3,7 @@ import ButtonPlay from "@/components/buttons/ButtonPlay";
 import ButtonPrimary from "@/components/buttons/ButtonPrimary";
 import ButtonWhatsapp from "@/components/buttons/ButtonWhatsapp";
 import Notch from "@/components/notch/Notch";
+import { abrirChamadoWhatsapp, criarLinkWhatsApp } from "@/helpers";
 import {
   ArrowRight,
   CaretDoubleDown,
@@ -40,7 +41,7 @@ export default function Home() {
                 <Parallax translateY={["-120px", "120px"]}>
                   <div className="main-card p-5">
                     <h2 className="f-32">Prazer, somos a</h2>
-                    <h1 className="title">LITHIUM</h1>
+                    <h1 className="title slide-in-blurred-left">LITHIUM</h1>
                     <p className="mb-5">
                       Sua mais nova loja digital para compra de produtos Apple,
                       com preços justos e atendimento personalizado.
@@ -184,7 +185,12 @@ export default function Home() {
                     <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
                       <ButtonPrimary
                         title="comprar agora"
-                        link="#"
+                        type="button"
+                        onClick={() => {
+                          abrirChamadoWhatsapp(
+                            "Olá, gostaria de fazer um orçamento do produto - Macbooks"
+                          );
+                        }}
                         icon={<ArrowRight size={24} />}
                       />
                       <ButtonPlay
@@ -251,7 +257,12 @@ export default function Home() {
                 <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
                   <ButtonPrimary
                     title="comprar agora"
-                    link="#"
+                    type="button"
+                    onClick={() => {
+                      abrirChamadoWhatsapp(
+                        "Olá, gostaria de fazer um orçamento do produto - Iphones"
+                      );
+                    }}
                     icon={<ArrowRight size={24} />}
                   />
                   <ButtonPlay
@@ -299,7 +310,12 @@ export default function Home() {
                     <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
                       <ButtonPrimary
                         title="comprar agora"
-                        link="#"
+                        type="button"
+                        onClick={() => {
+                          abrirChamadoWhatsapp(
+                            "Olá, gostaria de fazer um orçamento do produto - Ipads"
+                          );
+                        }}
                         icon={<ArrowRight size={24} />}
                       />
                       <ButtonPlay
@@ -365,7 +381,12 @@ export default function Home() {
                     <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
                       <ButtonPrimary
                         title="comprar agora"
-                        link="#"
+                        type="button"
+                        onClick={() => {
+                          abrirChamadoWhatsapp(
+                            "Olá, gostaria de fazer um orçamento do produto - Apple Watch"
+                          );
+                        }}
                         icon={<ArrowRight size={24} />}
                       />
                       <ButtonPlay
@@ -450,11 +471,16 @@ export default function Home() {
                   <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
                     <ButtonPrimary
                       title="comprar agora"
-                      link="#"
+                      type="button"
+                      onClick={() => {
+                        abrirChamadoWhatsapp(
+                          "Olá, gostaria de fazer um orçamento do produto - Airpods"
+                        );
+                      }}
                       icon={<ArrowRight size={24} />}
                     />
                     <ButtonPlay
-                      link="https://youtu.be/I-t2mwrYc6s?list=PLHFlHpPjgk71PWgLPtTl51crrA2dp777g"
+                      link="https://youtu.be/fVW8-px4Ufw?list=PLHFlHpPjgk734PlnSL1Hnru6ywrPh213w"
                       target="_blank"
                       icon={<Play size={28} />}
                     />
@@ -472,7 +498,13 @@ export default function Home() {
         </Container>
       </section>
 
-      <ButtonWhatsapp />
+      <ButtonWhatsapp
+        onClick={() => {
+          abrirChamadoWhatsapp(
+            "Olá, gostaria de fazer um orçamento de um produto Apple!"
+          );
+        }}
+      />
       <img src="/svgs/dots.svg" className="dots-right slide-top" alt="dots" />
       <img src="/svgs/dots.svg" className="dots-left slide-top" alt="dots" />
     </>
