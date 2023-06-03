@@ -181,9 +181,9 @@ export default function Home() {
                       seu novo MacBook - uma combinação perfeita de estilo,
                       desempenho e inovação.
                     </p>
-                    <div className="d-flex align-items-center justify-content-between">
+                    <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
                       <ButtonPrimary
-                        title="acessar"
+                        title="comprar agora"
                         link="#"
                         icon={<ArrowRight size={24} />}
                       />
@@ -205,16 +205,16 @@ export default function Home() {
         <Container fluid className="py-5">
           <Container className="py-5">
             <Row className="align-items-center">
-              <Col sm="12" xl="4" className="p-4">
+              <Col sm="12" xl="4" className="p-5">
                 <Parallax
-                  translateX={["-500px", "0px"]}
-                  scale={[0.2, 1.1]}
+                  translateX={["-1000px", "10px"]}
+                  scale={[0, 1.1]}
                   rotate={[-65, 0]}
                   rootMargin={{
-                    top: 10000,
-                    right: 1000,
-                    bottom: 10,
-                    left: 1000,
+                    top: 15000,
+                    right: 0,
+                    bottom: 0,
+                    left: 0,
                   }}
                   easing="easeInQuad"
                 >
@@ -248,9 +248,9 @@ export default function Home() {
                   registrar momentos especiais, nós da Lithium estamos prontos
                   para te ajudar na escolha do seu iPhones ideal.
                 </p>
-                <div className="d-flex align-items-center justify-content-between">
+                <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
                   <ButtonPrimary
-                    title="acessar"
+                    title="comprar agora"
                     link="#"
                     icon={<ArrowRight size={24} />}
                   />
@@ -296,9 +296,9 @@ export default function Home() {
                       Desbloqueie seu potencial ilimitado, onde o futuro está ao
                       seu alcance com um simples toque.
                     </p>
-                    <div className="d-flex align-items-center justify-content-between">
+                    <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
                       <ButtonPrimary
-                        title="acessar"
+                        title="comprar agora"
                         link="#"
                         icon={<ArrowRight size={24} />}
                       />
@@ -362,9 +362,9 @@ export default function Home() {
                       Eleve seu estilo, potencialize suas atividades e aproveite
                       a comodidade em todas as áreas da sua vida.
                     </p>
-                    <div className="d-flex align-items-center justify-content-between">
+                    <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
                       <ButtonPrimary
-                        title="acessar"
+                        title="comprar agora"
                         link="#"
                         icon={<ArrowRight size={24} />}
                       />
@@ -383,8 +383,8 @@ export default function Home() {
       </section>
 
       <section>
-        <Container fluid>
-          <Container className="d-flex flex-column align-items-center">
+        <Container fluid className="py-5">
+          <Container className="py-5 d-flex flex-column align-items-center">
             <img
               src="/apple-products.png"
               width="350"
@@ -417,6 +417,61 @@ export default function Home() {
           </Container>
         </Container>
       </section>
+
+      <section>
+        <Container fluid className="py-5">
+          <Container className="py-5">
+            <Row className="g-4">
+              <Col sm="12">
+                <div className="airpods-box p-5 text-center">
+                  <h2 className="f-64">AIRPODS</h2>
+                  <p className="f-16">
+                    Desfrute de uma experiência sonora sem limites e livre-se
+                    dos fios.
+                  </p>
+                  <p className="f-16">
+                    Os AirPods proporcionam áudio de alta qualidade e uma
+                    conveniência excepcional. Seu design elegante e compacto os
+                    tornam perfeitos para acompanhar seu estilo de vida ativo.
+                    Conecte-se instantaneamente aos seus dispositivos Apple e
+                    desfrute de uma conexão perfeita, reproduzindo música,
+                    realizando chamadas e muito mais.
+                  </p>
+                  <p>
+                    Além disso, com a tecnologia de cancelamento de ruído, você
+                    pode se perder na música e nos podcasts, mergulhando em um
+                    som nítido e envolvente.
+                  </p>
+                  <p>
+                    Viva a sensação de liberdade e desfrute de uma qualidade
+                    sonora impecável com os AirPods - uma experiência auditiva
+                    inigualável.
+                  </p>
+                  <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+                    <ButtonPrimary
+                      title="comprar agora"
+                      link="#"
+                      icon={<ArrowRight size={24} />}
+                    />
+                    <ButtonPlay
+                      link="https://youtu.be/I-t2mwrYc6s?list=PLHFlHpPjgk71PWgLPtTl51crrA2dp777g"
+                      target="_blank"
+                      icon={<Play size={28} />}
+                    />
+                  </div>
+                </div>
+              </Col>
+              <Col sm="12" xl="8">
+                <div className="iphones-box"></div>
+              </Col>
+              <Col sm="12" xl="4">
+                <div className="ipads-box"></div>
+              </Col>
+            </Row>
+          </Container>
+        </Container>
+      </section>
+
       <ButtonWhatsapp />
       <img src="/svgs/dots.svg" className="dots-right slide-top" alt="dots" />
       <img src="/svgs/dots.svg" className="dots-left slide-top" alt="dots" />
