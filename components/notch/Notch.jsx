@@ -9,10 +9,10 @@ import Link from "next/link";
 export default function Notch() {
   return (
     <div className="notch ">
-      <Link href="#">
+      <Link href="https://www.instagram.com/lithiumbrasil/" target="_blank">
         <FacebookLogo size={24} color="#fff" />
       </Link>
-      <Link href="#">
+      <Link href="https://www.instagram.com/lithiumbrasil/" target="_blank">
         <InstagramLogo size={24} color="#fff" />
       </Link>
       <Link
