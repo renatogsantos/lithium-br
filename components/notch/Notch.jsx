@@ -1,3 +1,4 @@
+import { abrirChamadoWhatsapp } from "@/helpers";
 import {
   FacebookLogo,
   InstagramLogo,
@@ -14,7 +15,14 @@ export default function Notch() {
       <Link href="#">
         <InstagramLogo size={24} color="#fff" />
       </Link>
-      <Link href="#">
+      <Link
+        href="#"
+        onClick={() => {
+          abrirChamadoWhatsapp(
+            "Olá, gostaria de fazer um orçamento de um produto Apple!"
+          );
+        }}
+      >
         <WhatsappLogo size={24} color="#fff" />
       </Link>
     </div>

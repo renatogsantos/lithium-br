@@ -217,7 +217,7 @@ body {
 
 .iphones-box {
   background: url("/iphones.jpg");
-  background-size: 100%;
+  background-size: contain 100%;
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 32px;
@@ -225,13 +225,13 @@ body {
   height: 400px;
   transition: 0.2s ease-in-out;
   &:hover {
-    background-size: 110%;
+    background-size: contain 110%;
   }
 }
 
 .ipads-box {
   background: url("/ipads.jpg");
-  background-size: 100%;
+  background-size: contain 100%;
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 32px;
@@ -239,7 +239,7 @@ body {
   height: 400px;
   transition: 0.2s ease-in-out;
   &:hover {
-    background-size: 110%;
+    background-size: contain 110%;
   }
 }
 
