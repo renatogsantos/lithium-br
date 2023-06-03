@@ -2,11 +2,14 @@
 import ButtonPlay from "@/components/buttons/ButtonPlay";
 import ButtonPrimary from "@/components/buttons/ButtonPrimary";
 import ButtonWhatsapp from "@/components/buttons/ButtonWhatsapp";
+import Comentario from "@/components/cards/comentario";
 import Notch from "@/components/notch/Notch";
+import { Comentarios } from "@/documents/comentarios";
 import { abrirChamadoWhatsapp, criarLinkWhatsApp } from "@/helpers";
 import {
   ArrowRight,
   CaretDoubleDown,
+  ChatCircleText,
   CreditCard,
   HandCoins,
   Handbag,
@@ -487,13 +490,109 @@ export default function Home() {
                   </div>
                 </div>
               </Col>
-              <Col sm="12" xl="8">
+              <Col sm="12" xl="8" className="d-none d-xl-flex">
                 <div className="iphones-box"></div>
               </Col>
-              <Col sm="12" xl="4">
+              <Col sm="12" xl="4" className="d-none d-xl-flex">
                 <div className="ipads-box"></div>
               </Col>
             </Row>
+          </Container>
+        </Container>
+      </section>
+
+      <section>
+        <Container fluid className="py-5">
+          <Container className="py-5">
+            <Row>
+              <Col sm="12" xl="4">
+                <div className="sticky-top p-4">
+                  <span>
+                    <ChatCircleText size={64} />
+                    <h2 className="f-42">Veja o que pensam sobre nós.</h2>
+                    <p>
+                      Nosso objetivo é proporcionar uma experiência excepcional
+                      a cada visitante.
+                    </p>
+                    <p>
+                      Valorizamos o atendimento personalizado e a escuta atenta
+                      para entender as necessidades de cada cliente, por isso
+                      buscamos constantemente o feedback para melhorar
+                      continuamente.
+                    </p>
+                    <p>
+                      Suas opiniões e sugestões são valiosas para nós, e
+                      implementamos mudanças com base nelas.Estamos prontos para
+                      recebê-lo e garantir uma experiência de compra memorável,
+                      positiva e totalmente satisfatória. Sua felicidade nos
+                      impulsiona a melhorar a cada dia.
+                    </p>
+                    <p>Fique agora com alguns comentários:</p>
+                  </span>
+                </div>
+              </Col>
+              <Col>
+                {Comentarios.map((item) => {
+                  return (
+                    <Comentario
+                      nome={item.nome}
+                      comentario={item.comentario}
+                      stars={item.stars}
+                      foto={item.foto}
+                    />
+                  );
+                })}
+              </Col>
+            </Row>
+          </Container>
+        </Container>
+      </section>
+
+      <section>
+        <Container fluid className="py-5">
+          <Container>
+            <small>
+              Agradecemos por explorar o inovador mundo da Lithium, sua loja de
+              tecnologia com foco na excelência. Nosso objetivo é oferecer uma
+              experiência de compra excepcional, levando diretamente para suas
+              mãos a paixão pela incrível gama de produtos da Apple.
+            </small>
+            <small>
+              Acreditamos que a tecnologia não conhece limites, e estamos aqui
+              para garantir que você tenha acesso aos produtos mais avançados e
+              desejados do mercado. Nossa seleção de produtos é cuidadosamente
+              escolhida para atender às suas necessidades, e nossa equipe está
+              pronta para orientá-lo e ajudá-lo a encontrar o produto perfeito.
+            </small>
+            <small>
+              Na Lithium, valorizamos cada cliente e estamos empenhados em
+              fornecer um serviço excepcional desde o momento em que você chega
+              ao nosso site até o momento em que recebe seu novo dispositivo.
+              Sua satisfação é nossa prioridade máxima.
+            </small>
+            <small>
+              Explore nossa loja online e descubra uma ampla variedade de
+              produtos inovadores da Apple, desde os últimos modelos de iPhone
+              até os mais recentes lançamentos de MacBooks e iPads. Além disso,
+              oferecemos uma seleção de acessórios premium para aprimorar ainda
+              mais sua experiência tecnológica.
+            </small>
+            <small>
+              Fique tranquilo sabendo que somos uma equipe apaixonada, pronta
+              para compartilhar nosso conhecimento e ajudá-lo em cada etapa do
+              caminho. Seja para tirar dúvidas, oferecer conselhos ou garantir
+              um processo de compra tranquilo, estamos aqui para você.
+            </small>
+            <small>
+              A Lithium é o seu destino definitivo para tecnologia Apple de
+              ponta. Explore, escolha e deixe-nos ajudá-lo a levar a inovação
+              para sua vida diária. Junte-se a nós agora e faça parte da nossa
+              comunidade apaixonada por tecnologia.
+            </small>
+            <small>
+              Obrigado por visitar a Lithium! Estamos ansiosos para atendê-lo e
+              oferecer uma experiência de compra excepcional.
+            </small>
           </Container>
         </Container>
       </section>
