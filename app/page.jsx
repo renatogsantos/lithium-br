@@ -22,16 +22,22 @@ import Notch from "@/components/notch/Notch";
 import CardProdutos from "@/components/produtos/CardProdutos";
 
 export default function Home() {
-  // const [categoria, setCategoria] = useState(1);
-  // const listaCategoria = Produtos.find((el) => el.id === categoria);
+  const [categoria, setCategoria] = useState();
+  const [categoriaSelecionada, setCategoriaSelecionada] = useState();
 
-  // useEffect(() => {
-  //   console.log(listaCategoria);
-  // }, [listaCategoria]);
+  const selectCategoria = () => {
+    let categoriaSelected = Produtos.find((el) => el.id === categoria);
+    setCategoriaSelecionada(categoriaSelected);
+  };
+
+  useEffect(() => {
+    selectCategoria();
+  }, [categoria]);
 
   return (
     <>
       <Notch />
+      <CardProdutos categoriaSelecionada={categoriaSelecionada} title="teste" />
       <main className="hero-1">
         <img
           src="/elipse-1.png"
@@ -78,10 +84,6 @@ export default function Home() {
           <CaretDoubleDown size={32} color="#fff" className="slide-in-top" />
         </div>
       </main>
-
-      <Container>
-        <CardProdutos title="teste" />
-      </Container>
 
       <section id="about">
         <Container fluid className="py-5">
@@ -203,9 +205,10 @@ export default function Home() {
                         title="comprar agora"
                         type="button"
                         onClick={() => {
-                          abrirChamadoWhatsapp(
-                            "Olá, gostaria de fazer um orçamento do produto - Macbooks"
-                          );
+                          setCategoria(1);
+                          // abrirChamadoWhatsapp(
+                          //   "Olá, gostaria de fazer um orçamento do produto - Macbooks"
+                          // );
                         }}
                         icon={<ArrowRight size={24} />}
                       />
