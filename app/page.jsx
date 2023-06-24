@@ -1,11 +1,4 @@
 "use client";
-import ButtonPlay from "@/components/buttons/ButtonPlay";
-import ButtonPrimary from "@/components/buttons/ButtonPrimary";
-import ButtonWhatsapp from "@/components/buttons/ButtonWhatsapp";
-import Comentario from "@/components/cards/comentario";
-import Notch from "@/components/notch/Notch";
-import { Comentarios } from "@/documents/comentarios";
-import { abrirChamadoWhatsapp, criarLinkWhatsApp } from "@/helpers";
 import {
   ArrowRight,
   CaretDoubleDown,
@@ -15,11 +8,27 @@ import {
   Handbag,
   Play,
 } from "@phosphor-icons/react";
-import { useEffect, useState } from "react";
+import { Comentarios } from "@/documents/comentarios";
+import { Produtos } from "@/documents/produtos";
+import { abrirChamadoWhatsapp } from "@/helpers";
 import { Col, Container, Row } from "react-bootstrap";
 import { Parallax } from "react-scroll-parallax";
+import { useEffect, useState } from "react";
+import ButtonPlay from "@/components/buttons/ButtonPlay";
+import ButtonPrimary from "@/components/buttons/ButtonPrimary";
+import ButtonWhatsapp from "@/components/buttons/ButtonWhatsapp";
+import Comentario from "@/components/cards/comentario";
+import Notch from "@/components/notch/Notch";
+import CardProdutos from "@/components/produtos/CardProdutos";
 
 export default function Home() {
+  // const [categoria, setCategoria] = useState(1);
+  // const listaCategoria = Produtos.find((el) => el.id === categoria);
+
+  // useEffect(() => {
+  //   console.log(listaCategoria);
+  // }, [listaCategoria]);
+
   return (
     <>
       <Notch />
@@ -69,6 +78,10 @@ export default function Home() {
           <CaretDoubleDown size={32} color="#fff" className="slide-in-top" />
         </div>
       </main>
+
+      <Container>
+        <CardProdutos title="teste" />
+      </Container>
 
       <section id="about">
         <Container fluid className="py-5">
@@ -534,12 +547,13 @@ export default function Home() {
               <Col>
                 {Comentarios.map((item) => {
                   return (
-                    <Comentario
-                      nome={item.nome}
-                      comentario={item.comentario}
-                      stars={item.stars}
-                      foto={item.foto}
-                    />
+                    <div key={item.id}>
+                      <Comentario
+                        nome={item.nome}
+                        comentario={item.comentario}
+                        foto={item.foto}
+                      />
+                    </div>
                   );
                 })}
               </Col>

@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <title>Lithium - Sua Loja de Tecnologia Apple</title>
       </head>
       <ParallaxProvider>
-        <body>{children}</body>
+        <body suppressHydrationWarning={true} >{children}</body>
       </ParallaxProvider>
     </html>
   );
