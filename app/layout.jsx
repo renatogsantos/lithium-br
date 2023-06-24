@@ -1,6 +1,8 @@
 "use client";
 import { ParallaxProvider } from "react-scroll-parallax";
 import "./globals.scss";
+import { store } from "../redux/store";
+import { Provider } from "react-redux";
 
 export default function RootLayout({ children }) {
   return (
@@ -18,9 +20,11 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lithium - Sua Loja de Tecnologia Apple</title>
       </head>
-      <ParallaxProvider>
-        <body suppressHydrationWarning={true} >{children}</body>
-      </ParallaxProvider>
+      <Provider store={store}>
+        <ParallaxProvider>
+          <body suppressHydrationWarning={true}>{children}</body>
+        </ParallaxProvider>
+      </Provider>
     </html>
   );
 }
