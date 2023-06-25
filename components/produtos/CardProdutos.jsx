@@ -1,55 +1,65 @@
+"use client"
+import { opcoesProduto, showModal } from "@/redux/features/produtosReducer";
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
 
-export default function CardProdutos({ categoriaSelecionada }) {
-  const [produtoSelecionado, setProdutoSelecionado] = useState();
-  const produtos = categoriaSelecionada ? categoriaSelecionada.produtos : [];
-
-  //seleciona o produto "macbook", próximo passo seria escolher as opções diponíveis
-
-  useEffect(() => {
-    setProdutoSelecionado(produtos[0]);
-  }, [categoriaSelecionada]);
+export default function CardProdutos() {
+  const dispatch = useDispatch();
+  const { produtoSelecionado, opcoes, openModal } = useSelector(
+    (state) => state.produtos
+  );
 
   return (
     <>
-      {produtoSelecionado && (
+      {openModal && (
         <div className="bg-card-produtos">
-          <div className="card-produtos p-4">
+          <div className="card-produtos slide-in-top p-4">
             <button
               type="button"
               className="btn-close"
               onClick={() => {
-                setProdutoSelecionado(null);
+                dispatch(showModal(false));
               }}
-            ></button>
+            />
             <Container>
+              <Row className="g-1">
+                {produtoSelecionado.produtos.map((item) => {
+                  return (
+                    <Col sm="12" xl>
+                      <button
+                        key={item.id}
+                        type="button"
+                        className="btn btn-light d-flex align-items-center gap-2 f-16"
+                        onClick={() => {
+                          dispatch(opcoesProduto(item));
+                        }}
+                      >
+                        <div
+                          key={item.color}
+                          className="produtos-cores"
+                          style={{ backgroundColor: item.color }}
+                        />
+                        {item.title}
+                      </button>
+                    </Col>
+                  );
+                })}
+              </Row>
               <Row className="g-4 align-items-center">
                 <Col sm="12" xl="4">
-                  <img src={produtoSelecionado.photo} alt="" width="100%" />
-                  <div className="d-flex justify-content-evenly w-100">
-                    {produtoSelecionado.colors.map((cor) => {
-                      return (
-                        <button
-                          type="button"
-                          key={cor}
-                          className="produtos-cores mb-4"
-                          style={{ backgroundColor: cor }}
-                        />
-                      );
-                    })}
-                  </div>
+                  <img src={opcoes?.photo} alt="" width="100%" />
                 </Col>
                 <Col sm="12" xl="8">
-                  <h2>{produtoSelecionado.title}</h2>
-                  {produtoSelecionado.description.map((desc, index) => {
+                  <h2 className="fw-bold">{opcoes?.title}</h2>
+                  <h3 className="f-24">{opcoes?.subtitle}</h3>
+                  {opcoes?.description?.map((desc, index) => {
                     return (
                       <p key={index} className="p-0 mb-1">
                         {desc}
                       </p>
                     );
                   })}
-                  <span></span>
                 </Col>
               </Row>
             </Container>

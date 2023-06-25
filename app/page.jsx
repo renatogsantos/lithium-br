@@ -21,32 +21,15 @@ import Comentario from "@/components/cards/comentario";
 import Notch from "@/components/notch/Notch";
 import CardProdutos from "@/components/produtos/CardProdutos";
 import { useDispatch, useSelector } from "react-redux";
-import { increment } from "@/redux/features/counterSlice";
+import { getCategoria, selectProduto, showModal } from "@/redux/features/produtosReducer";
 
 export default function Home() {
-  const [categoria, setCategoria] = useState();
-  const [categoriaSelecionada, setCategoriaSelecionada] = useState();
-
-  const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
-
-  const selectCategoria = () => {
-    let categoriaSelected = Produtos.find((el) => el.id === categoria);
-    setCategoriaSelecionada(categoriaSelected);
-  };
-
-  useEffect(() => {
-    selectCategoria();
-  }, [categoria]);
-
-  useEffect(() => {
-    console.log(count);
-  }, [count]);
 
   return (
     <>
       <Notch />
-      <CardProdutos categoriaSelecionada={categoriaSelecionada} title="teste" />
+      <CardProdutos title="teste" />
       <main className="hero-1">
         <img
           src="/elipse-1.png"
@@ -68,14 +51,6 @@ export default function Home() {
                 <Parallax translateY={["-120px", "120px"]}>
                   <div className="main-card p-5">
                     <h2 className="f-32">Prazer, somos a</h2>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        dispatch(increment());
-                      }}
-                    >
-                      Incremento
-                    </button>
                     <h1 className="title slide-in-blurred-left">LITHIUM</h1>
                     <p className="mb-5">
                       Sua mais nova loja digital para compra de produtos Apple,
@@ -222,7 +197,7 @@ export default function Home() {
                         title="comprar agora"
                         type="button"
                         onClick={() => {
-                          setCategoria(1);
+                          dispatch(getCategoria(1))
                           // abrirChamadoWhatsapp(
                           //   "Olá, gostaria de fazer um orçamento do produto - Macbooks"
                           // );
