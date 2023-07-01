@@ -21,7 +21,11 @@ import Comentario from "@/components/cards/comentario";
 import Notch from "@/components/notch/Notch";
 import CardProdutos from "@/components/produtos/CardProdutos";
 import { useDispatch, useSelector } from "react-redux";
-import { getCategoria, selectProduto, showModal } from "@/redux/features/produtosReducer";
+import {
+  getCategoria,
+  selectProduto,
+  showModal,
+} from "@/redux/features/produtosReducer";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -197,10 +201,10 @@ export default function Home() {
                         title="comprar agora"
                         type="button"
                         onClick={() => {
-                          dispatch(getCategoria(1))
-                          // abrirChamadoWhatsapp(
-                          //   "Olá, gostaria de fazer um orçamento do produto - Macbooks"
-                          // );
+                          //dispatch(getCategoria(1));
+                          abrirChamadoWhatsapp(
+                            "Olá, gostaria de fazer um orçamento do produto - Macbooks"
+                          );
                         }}
                         icon={<ArrowRight size={24} />}
                       />
@@ -226,7 +230,7 @@ export default function Home() {
                 <Parallax
                   translateX={["-1000px", "10px"]}
                   scale={[0, 1.1]}
-                  rotate={[-65, 0]}
+                  rotate={["-65deg", "0"]}
                   rootMargin={{
                     top: 15000,
                     right: 0,
@@ -512,12 +516,13 @@ export default function Home() {
       <section>
         <Container fluid className="py-5">
           <Container className="py-5">
-            <Row>
-              <Col sm="12" xl="4">
+            <h2 className="f-42">
+              <ChatCircleText size={64} /> Veja o que pensam sobre nós.
+            </h2>
+            <Row className="pt-5">
+              <Col sm="12" xl="4" className="order-first order-lg-last">
                 <div className="sticky-top p-4">
                   <span>
-                    <ChatCircleText size={64} />
-                    <h2 className="f-42">Veja o que pensam sobre nós.</h2>
                     <p>
                       Nosso objetivo é proporcionar uma experiência excepcional
                       a cada visitante.
