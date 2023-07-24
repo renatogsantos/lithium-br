@@ -19,6 +19,21 @@ export default function RootLayout({ children }) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lithium - Sua Loja de Tecnologia Apple</title>
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-25E88CFM89"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-25E88CFM89');
+            `,
+          }}
+        />
       </head>
       <Provider store={store}>
         <ParallaxProvider>
