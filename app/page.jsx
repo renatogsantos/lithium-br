@@ -60,7 +60,7 @@ export default function Home() {
                       Sua mais nova loja digital para compra de produtos Apple,
                       com preços justos e atendimento personalizado.
                     </p>
-                    <link href="https://api.whatsapp.com/send?phone=5511911882402&text=Ol%C3%A1%20Renato,%20pode%20me%20ajudar?" target="_blank">Teste renato</link>
+                    <a href="https://api.whatsapp.com/send?phone=5511911882402&text=Ol%C3%A1%20Renato,%20pode%20me%20ajudar?" target="_blank">Teste renato</a>
                     <div>
                       <a
                         aria-label="Sobre nós"
