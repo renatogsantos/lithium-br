@@ -37,9 +37,9 @@ export default function Home() {
       <main className="hero-1">
         <img
           src="/elipse-1.png"
-          alt="elipse-azul"
-          draggable={false}
           className="elipse-1"
+          alt="Elipse degradê"
+          draggable={false}
         />
         <a
           href="mailto:lithium@gmail.com"
@@ -62,6 +62,7 @@ export default function Home() {
                     </p>
                     <div>
                       <a
+                        aria-label="Sobre nós"
                         href="#about"
                         className="button-primary"
                         rel="noreferrer"
@@ -92,6 +93,7 @@ export default function Home() {
                       src="/logo-lithium.png"
                       width="100%"
                       alt="Logo lithium"
+                      draggable={false}
                     />
                   </Col>
                   <Col sm="12" xl="8" className="p-5">
@@ -241,8 +243,9 @@ export default function Home() {
                 >
                   <img
                     src="/iphone-14-pro.png"
-                    alt="Iphone 13 - Celular Apple"
                     width="100%"
+                    draggable={false}
+                    alt="Iphone 13 - Celular Apple"
                   />
                 </Parallax>
               </Col>
@@ -424,7 +427,7 @@ export default function Home() {
             <img
               src="/apple-products.png"
               width="350"
-              alt=""
+              alt="Produtos Apple"
               draggable={false}
             />
             <div className="text-center py-5">
@@ -618,8 +621,8 @@ export default function Home() {
           );
         }}
       />
-      <img src="/svgs/dots.svg" className="dots-right slide-top" alt="dots" />
-      <img src="/svgs/dots.svg" className="dots-left slide-top" alt="dots" />
+      <img src="/svgs/dots.svg" className="dots-right slide-top" alt="dots" draggable={false} />
+      <img src="/svgs/dots.svg" className="dots-left slide-top" alt="dots" draggable={false} />
     </>
   );
 }

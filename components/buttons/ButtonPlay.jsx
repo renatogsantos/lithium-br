@@ -5,6 +5,7 @@ export default function ButtonPlay({ type, link, title, icon, onClick, target })
     <>
       {type && (
         <button
+          aria-label={title}
           tabIndex="0"
           className="button-primary"
           type={type}
