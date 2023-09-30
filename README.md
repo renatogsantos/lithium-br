@@ -4,10 +4,7 @@ Lithium é a sua mais nova loja digital para a compra de produtos Apple, oferece
 
 ## Recursos Principais
 
-- Catálogo de produtos Apple.
-- Carrinho de compras.
 - Páginas de detalhes do produto.
-- Checkout seguro.
 - Atendimento ao cliente personalizado.
 - Preços competitivos.
 
@@ -27,12 +24,8 @@ Lithium é a sua mais nova loja digital para a compra de produtos Apple, oferece
 5. Envie as alterações para o seu fork: `git push origin nome-da-sua-branch`.
 6. Crie uma Pull Request neste repositório original explicando suas alterações.
 
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
-
 ## Contato
 
-Para obter mais informações sobre o Lithium, entre em contato conosco em [seu-email@email.com].
+Para obter mais informações sobre o Lithium, entre em contato conosco em renato.work.art@gmail.com.
 
 Obrigado por escolher o Lithium para suas compras de produtos Apple!
