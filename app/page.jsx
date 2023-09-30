@@ -211,7 +211,7 @@ export default function Home() {
                         icon={<ArrowRight size={24} />}
                       />
                       <ButtonPlay
-                        link="https://youtu.be/jwmS1gc9S5A?list=PLHFlHpPjgk714Wqve10unWDzDIo4HVAI8"
+                        link="https://youtu.be/51QO4pavK3A?list=PLHFlHpPjgk714Wqve10unWDzDIo4HVAI8"
                         target="_blank"
                         icon={<Play size={28} />}
                       />
@@ -284,7 +284,7 @@ export default function Home() {
                     icon={<ArrowRight size={24} />}
                   />
                   <ButtonPlay
-                    link="https://youtu.be/WuEH265pUy4?list=PLHFlHpPjgk706qEJf9fkclIhdhTkH49Tb"
+                    link="https://youtu.be/kuOQdo7t3Xk?list=PLHFlHpPjgk706qEJf9fkclIhdhTkH49Tb"
                     target="_blank"
                     icon={<Play size={28} />}
                   />
@@ -408,7 +408,7 @@ export default function Home() {
                         icon={<ArrowRight size={24} />}
                       />
                       <ButtonPlay
-                        link="https://youtu.be/UfawgQJICU8"
+                        link="https://youtu.be/Nvb_Kta7v6U"
                         target="_blank"
                         icon={<Play size={28} />}
                       />
@@ -498,7 +498,7 @@ export default function Home() {
                       icon={<ArrowRight size={24} />}
                     />
                     <ButtonPlay
-                      link="https://youtu.be/fVW8-px4Ufw?list=PLHFlHpPjgk734PlnSL1Hnru6ywrPh213w"
+                      link="https://youtu.be/ql6mhhHCldY"
                       target="_blank"
                       icon={<Play size={28} />}
                     />
