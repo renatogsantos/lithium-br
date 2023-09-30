@@ -284,7 +284,7 @@ export default function Home() {
                     icon={<ArrowRight size={24} />}
                   />
                   <ButtonPlay
-                    link="https://youtu.be/kuOQdo7t3Xk?list=PLHFlHpPjgk706qEJf9fkclIhdhTkH49Tb"
+                    link="https://youtu.be/xqyUdNxWazA"
                     target="_blank"
                     icon={<Play size={28} />}
                   />
