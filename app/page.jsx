@@ -161,7 +161,10 @@ export default function Home() {
       </section>
 
       <section className="macbooks-bg">
-        <Container fluid className="py-5 m-0 d-flex align-items-center h-100 overflow-x-hidden">
+        <Container
+          fluid
+          className="py-5 m-0 d-flex align-items-center h-100 overflow-x-hidden"
+        >
           <Container className="py-5">
             <Row>
               <Col sm="12" xl="7">
@@ -428,7 +431,7 @@ export default function Home() {
       <section>
         <Container fluid className="p-4 p-xl-5">
           <div className="airpods-box p-4 p-xl-5 text-center">
-            <Container fluid className="p-4 p-xl-5">
+            <Container className="p-4 p-xl-5">
               <h2 className="f-64">AIRPODS</h2>
               <p className="f-16">
                 Desfrute de uma experiência sonora sem limites e livre-se dos
@@ -480,19 +483,20 @@ export default function Home() {
               scale={[0, 1]}
               rotate={["-400deg", "0"]}
               rootMargin={{
-                top: 400,
+                top: 500,
                 right: 0,
-                bottom: -400,
+                bottom: -300,
                 left: 0,
               }}
-              easing="easeInOut"
             >
-              <img
-                src="/iphone15.png"
-                width="100%"
-                alt="Produtos Apple"
-                draggable={false}
-              />
+              <div className="d-flex justify-content-center">
+                <img
+                  src="/iphone15.png"
+                  width="80%"
+                  alt="Produtos Apple"
+                  draggable={false}
+                />
+              </div>
             </Parallax>
             <div className="text-center py-5">
               <p className="f-16">
