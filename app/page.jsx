@@ -189,11 +189,6 @@ export default function Home() {
                       produtividade e levar sua criatividade a novos patamares.
                     </p>
                     <p className="f-16">
-                      Desfrute da liberdade de um sistema operacional intuitivo,
-                      experimente a velocidade impressionante dos processadores
-                      e confie na durabilidade de um produto de alta qualidade.
-                    </p>
-                    <p className="f-16">
                       Eleve sua experiência tecnológica a um novo nível com o
                       seu novo MacBook - uma combinação perfeita de estilo,
                       desempenho e inovação.
@@ -225,7 +220,7 @@ export default function Home() {
       </section>
 
       <section>
-        <Container fluid className="py-5">
+        <Container fluid className="py-5 overflow-x-hidden">
           <Container className="py-5">
             <Row className="align-items-center">
               <Col sm="12" xl="4" className="p-5">
@@ -250,45 +245,56 @@ export default function Home() {
                 </Parallax>
               </Col>
               <Col sm="12" xl="8" className="p-5">
-                <h2 className="f-64">IPHONES</h2>
-                <p className="f-16">
-                  Descubra um mundo de possibilidades ao seu alcance com o
-                  iPhone. Tendencia no mercado de smartphones, oferecem um
-                  equilíbrio perfeito entre estilo, desempenho e funcionalidade.
-                </p>
-                <p className="f-16">
-                  Com recursos avançados, como uma câmera de alta qualidade, uma
-                  tela vibrante e um processador potente, os iPhones elevam a
-                  experiência móvel a um novo patamar.
-                </p>
-                <p className="f-16">
-                  Explore o ecossistema integrado da Apple, que permite uma
-                  sincronização perfeita entre dispositivos da marca, acesso a
-                  uma vasta variedade de aplicativos e a garantia de segurança
-                  de dados de ponta a ponta.
-                </p>
-                <p className="f-16">
-                  Seja para fins profissionais, entretenimento ou apenas
-                  registrar momentos especiais, nós da Lithium estamos prontos
-                  para te ajudar na escolha do seu iPhones ideal.
-                </p>
-                <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
-                  <ButtonPrimary
-                    title="comprar agora"
-                    type="button"
-                    onClick={() => {
-                      abrirChamadoWhatsapp(
-                        "Olá, gostaria de fazer um orçamento do produto - Iphones"
-                      );
-                    }}
-                    icon={<ArrowRight size={24} />}
-                  />
-                  <ButtonPlay
-                    link="https://youtu.be/xqyUdNxWazA"
-                    target="_blank"
-                    icon={<Play size={28} />}
-                  />
-                </div>
+                <Parallax
+                  translateX={["1000px", "10px"]}
+                  rootMargin={{
+                    top: 1000,
+                    right: 0,
+                    bottom: -900,
+                    left: 0,
+                  }}
+                >
+                  <h2 className="f-64">IPHONES</h2>
+                  <p className="f-16">
+                    Descubra um mundo de possibilidades ao seu alcance com o
+                    iPhone. Tendencia no mercado de smartphones, oferecem um
+                    equilíbrio perfeito entre estilo, desempenho e
+                    funcionalidade.
+                  </p>
+                  <p className="f-16">
+                    Com recursos avançados, como uma câmera de alta qualidade,
+                    uma tela vibrante e um processador potente, os iPhones
+                    elevam a experiência móvel a um novo patamar.
+                  </p>
+                  <p className="f-16">
+                    Explore o ecossistema integrado da Apple, que permite uma
+                    sincronização perfeita entre dispositivos da marca, acesso a
+                    uma vasta variedade de aplicativos e a garantia de segurança
+                    de dados de ponta a ponta.
+                  </p>
+                  <p className="f-16">
+                    Seja para fins profissionais, entretenimento ou apenas
+                    registrar momentos especiais, nós da Lithium estamos prontos
+                    para te ajudar na escolha do seu iPhones ideal.
+                  </p>
+                  <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+                    <ButtonPrimary
+                      title="comprar agora"
+                      type="button"
+                      onClick={() => {
+                        abrirChamadoWhatsapp(
+                          "Olá, gostaria de fazer um orçamento do produto - Iphones"
+                        );
+                      }}
+                      icon={<ArrowRight size={24} />}
+                    />
+                    <ButtonPlay
+                      link="https://youtu.be/xqyUdNxWazA"
+                      target="_blank"
+                      icon={<Play size={28} />}
+                    />
+                  </div>
+                </Parallax>
               </Col>
             </Row>
           </Container>
@@ -299,8 +305,16 @@ export default function Home() {
         <Container fluid className="py-5 m-0 d-flex align-items-center h-100">
           <Container className="py-5">
             <Row>
-              <Col>
-                <Parallax translateY={["-100px", "100px"]}>
+              <Col sm="6">
+                <Parallax
+                  translateX={["-1000px", "0px"]}
+                  rootMargin={{
+                    top: 1000,
+                    right: 0,
+                    bottom: -800,
+                    left: 0,
+                  }}
+                >
                   <div className="main-card p-5">
                     <h2 className="f-64">IPADS</h2>
                     <p className="f-16">
@@ -315,15 +329,6 @@ export default function Home() {
                       Com uma tela impressionante e tecnologia avançada, os
                       tablets da Apple oferecem uma experiência imersiva em
                       jogos, entretenimento e produtividade.
-                    </p>
-                    <p className="f-16">
-                      Seja nos estudos, no trabalho ou nos momentos de descanso,
-                      a equipe Lithium está aqui para mostrar que o iPad é a
-                      escolha ideal para qualquer função.
-                    </p>
-                    <p className="f-16">
-                      Desbloqueie seu potencial ilimitado, onde o futuro está ao
-                      seu alcance com um simples toque.
                     </p>
                     <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
                       <ButtonPrimary
@@ -368,24 +373,6 @@ export default function Home() {
                       variedade de pulseiras exclusivas, permitindo que você
                       combine estilo, funcionalidade e conveniência em um único
                       dispositivo.
-                    </p>
-                    <p className="f-16">
-                      Prepare-se para uma experiência além da imaginação, com
-                      recursos avançados de monitoramento de atividades.
-                      Controle sua frequência cardíaca, conte seus passos,
-                      rastreie seus exercícios e acompanhe as calorias
-                      queimadas. E isso é apenas o começo! O Apple Watch também
-                      apresenta recursos inovadores, como detecção de quedas e
-                      ECG, para garantir sua segurança e bem-estar.
-                    </p>
-                    <p className="f-16">
-                      A integração perfeita com o ecossistema da Apple permite
-                      que você receba notificações, responda mensagens, atenda
-                      chamadas e controle diversas funções do seu telefone
-                      diretamente no seu pulso. Aumente sua produtividade com a
-                      ajuda do assistente de voz Siri, gerencie sua agenda,
-                      receba lembretes, reproduza música e faça pagamentos com o
-                      Apple Pay, tudo isso sem tirar o telefone do bolso.
                     </p>
                     <p className="f-16">
                       Mantenha-se conectado em qualquer lugar com recursos de
@@ -621,8 +608,18 @@ export default function Home() {
           );
         }}
       />
-      <img src="/svgs/dots.svg" className="dots-right slide-top" alt="dots" draggable={false} />
-      <img src="/svgs/dots.svg" className="dots-left slide-top" alt="dots" draggable={false} />
+      <img
+        src="/svgs/dots.svg"
+        className="dots-right slide-top"
+        alt="dots"
+        draggable={false}
+      />
+      <img
+        src="/svgs/dots.svg"
+        className="dots-left slide-top"
+        alt="dots"
+        draggable={false}
+      />
     </>
   );
 }

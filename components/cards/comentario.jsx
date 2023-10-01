@@ -4,11 +4,13 @@ import { Parallax } from "react-scroll-parallax";
 export default function Comentario({ id, nome, comentario, foto }) {
   return (
     <Parallax
-      translateX={["-2000px", "10px"]}
+      translateX={["-25000px", "10px"]}
+      scale={[-100, 1]}
+      rotate={["-4500deg", "0"]}
       rootMargin={{
-        top: 30000,
+        top: 150000,
         right: 0,
-        bottom: 0,
+        bottom: -600,
         left: 0,
       }}
     >
