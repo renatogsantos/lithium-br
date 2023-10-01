@@ -44,7 +44,7 @@ export default function Home() {
           <Container className="py-5">
             <Row>
               <Col sm="12" xl="7">
-                <Parallax translateY={["-160px", "160px"]} easing="easeInOut">
+                <Parallax translateY={["-200px", "100px"]} easing="easeInOut">
                   <div className="main-card p-5">
                     <h2 className="f-32">Prazer, somos a</h2>
                     <h1 className="title slide-in-blurred-left">LITHIUM</h1>
@@ -77,7 +77,7 @@ export default function Home() {
       <section id="about">
         <Container fluid className="py-5">
           <Container className="py-5">
-            <Parallax translateY={["-120px", "120px"]} easing="easeInOut">
+            <Parallax translateY={["-100px", "100px"]} easing="easeInOut">
               <div className="main-card">
                 <Row className="align-items-center">
                   <Col sm="12" xl="4">
@@ -134,7 +134,7 @@ export default function Home() {
                 </Parallax>
               </Col>
               <Col className="py-5 py-lg-2">
-                <Parallax translateY={["-130px", "130px"]} easing="easeInOut">
+                <Parallax translateY={["-110px", "110px"]} easing="easeInOut">
                   <div className="card-hover p-5 my-3">
                     <HandCoins size={64} />
                     <p className="f-16 mt-4">
@@ -165,7 +165,16 @@ export default function Home() {
           <Container className="py-5">
             <Row>
               <Col sm="12" xl="7">
-                <Parallax translateY={["-120px", "120px"]} easing="easeInOut">
+                <Parallax
+                  translateX={["2000px", "0px"]}
+                  rootMargin={{
+                    top: 500,
+                    right: 0,
+                    bottom: -900,
+                    left: 0,
+                  }}
+                  easing="easeInOut"
+                >
                   <div className="main-card p-5">
                     <h2 className="f-64">MACBOOKS</h2>
                     <p className="f-16">
@@ -220,9 +229,9 @@ export default function Home() {
                   translateX={["-1000px", "10px"]}
                   rotate={["-85deg", "0"]}
                   rootMargin={{
-                    top: 900,
+                    top: 500,
                     right: 0,
-                    bottom: -900,
+                    bottom: -500,
                     left: 0,
                   }}
                   easing="easeInOut"
@@ -239,7 +248,7 @@ export default function Home() {
                 <Parallax
                   translateX={["1000px", "10px"]}
                   rootMargin={{
-                    top: 1000,
+                    top: 500,
                     right: 0,
                     bottom: -900,
                     left: 0,
@@ -304,9 +313,9 @@ export default function Home() {
                 <Parallax
                   translateX={["-1000px", "0px"]}
                   rootMargin={{
-                    top: 1000,
+                    top: 500,
                     right: 0,
-                    bottom: -900,
+                    bottom: -500,
                     left: 0,
                   }}
                   easing="easeInOut"
@@ -362,9 +371,9 @@ export default function Home() {
                 <Parallax
                   translateX={["2000px", "0px"]}
                   rootMargin={{
-                    top: 1000,
+                    top: 500,
                     right: 0,
-                    bottom: -900,
+                    bottom: -500,
                     left: 0,
                   }}
                   easing="easeInOut"
@@ -417,9 +426,9 @@ export default function Home() {
       </section>
 
       <section>
-        <Container fluid className="p-5">
-          <div className="airpods-box p-5 text-center">
-            <Container fluid className="p-5">
+        <Container fluid className="p-4 p-xl-5">
+          <div className="airpods-box p-4 p-xl-5 text-center">
+            <Container fluid className="p-4 p-xl-5">
               <h2 className="f-64">AIRPODS</h2>
               <p className="f-16">
                 Desfrute de uma experiência sonora sem limites e livre-se dos
@@ -471,9 +480,9 @@ export default function Home() {
               scale={[0, 1]}
               rotate={["-400deg", "0"]}
               rootMargin={{
-                top: 500,
+                top: 400,
                 right: 0,
-                bottom: -500,
+                bottom: -400,
                 left: 0,
               }}
               easing="easeInOut"
