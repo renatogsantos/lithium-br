@@ -20,16 +20,8 @@ import ButtonWhatsapp from "@/components/buttons/ButtonWhatsapp";
 import Comentario from "@/components/cards/comentario";
 import Notch from "@/components/notch/Notch";
 import CardProdutos from "@/components/produtos/CardProdutos";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  getCategoria,
-  selectProduto,
-  showModal,
-} from "@/redux/features/produtosReducer";
 
 export default function Home() {
-  const dispatch = useDispatch();
-
   return (
     <>
       <Notch />

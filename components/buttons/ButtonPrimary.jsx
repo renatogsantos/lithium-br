@@ -18,6 +18,7 @@ export default function ButtonPrimary({ type, link, title, icon, onClick }) {
       )}
       {link && (
         <Link
+          aria-label={title}
           tabIndex="0"
           className="button-primary"
           href={link}
