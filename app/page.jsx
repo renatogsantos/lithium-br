@@ -161,16 +161,16 @@ export default function Home() {
       </section>
 
       <section className="macbooks-bg">
-        <Container fluid className="py-5 m-0 d-flex align-items-center h-100">
+        <Container fluid className="py-5 m-0 d-flex align-items-center h-100 overflow-x-hidden">
           <Container className="py-5">
             <Row>
               <Col sm="12" xl="7">
                 <Parallax
                   translateX={["2000px", "0px"]}
                   rootMargin={{
-                    top: 500,
+                    top: 1000,
                     right: 0,
-                    bottom: -900,
+                    bottom: -800,
                     left: 0,
                   }}
                   easing="easeInOut"
@@ -244,13 +244,13 @@ export default function Home() {
                   />
                 </Parallax>
               </Col>
-              <Col sm="12" xl="8" className="p-5">
+              <Col sm="12" xl="8" className="p-4">
                 <Parallax
                   translateX={["1000px", "10px"]}
                   rootMargin={{
-                    top: 500,
+                    top: 1000,
                     right: 0,
-                    bottom: -900,
+                    bottom: -800,
                     left: 0,
                   }}
                   easing="easeInOut"
@@ -313,9 +313,9 @@ export default function Home() {
                 <Parallax
                   translateX={["-1000px", "0px"]}
                   rootMargin={{
-                    top: 500,
+                    top: 1000,
                     right: 0,
-                    bottom: -500,
+                    bottom: -600,
                     left: 0,
                   }}
                   easing="easeInOut"
@@ -371,9 +371,9 @@ export default function Home() {
                 <Parallax
                   translateX={["2000px", "0px"]}
                   rootMargin={{
-                    top: 500,
+                    top: 1000,
                     right: 0,
-                    bottom: -500,
+                    bottom: -800,
                     left: 0,
                   }}
                   easing="easeInOut"
