@@ -4,15 +4,16 @@ import { Parallax } from "react-scroll-parallax";
 export default function Comentario({ id, nome, comentario, foto }) {
   return (
     <Parallax
-      translateX={["-25000px", "10px"]}
-      scale={[-100, 1]}
-      rotate={["-4500deg", "0"]}
+      translateX={["-1000px", "10px"]}
+      scale={[0, 1]}
+      rotate={["-45deg", "0"]}
       rootMargin={{
-        top: 150000,
+        top: 1000,
         right: 0,
         bottom: -600,
         left: 0,
       }}
+      easing="easeInOut"
     >
       <div className="card-comentario p-4 mb-4 flex-column flex-lg-row">
         <div

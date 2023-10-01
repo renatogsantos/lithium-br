@@ -44,7 +44,7 @@ export default function Home() {
           <Container className="py-5">
             <Row>
               <Col sm="12" xl="7">
-                <Parallax translateY={["-120px", "120px"]}>
+                <Parallax translateY={["-160px", "160px"]} easing="easeInOut">
                   <div className="main-card p-5">
                     <h2 className="f-32">Prazer, somos a</h2>
                     <h1 className="title slide-in-blurred-left">LITHIUM</h1>
@@ -77,7 +77,7 @@ export default function Home() {
       <section id="about">
         <Container fluid className="py-5">
           <Container className="py-5">
-            <Parallax translateY={["-100px", "100px"]}>
+            <Parallax translateY={["-120px", "120px"]} easing="easeInOut">
               <div className="main-card">
                 <Row className="align-items-center">
                   <Col sm="12" xl="4">
@@ -123,7 +123,7 @@ export default function Home() {
           <Container className="py-5">
             <Row className="d-flex align-items-center">
               <Col className="py-5 py-lg-2">
-                <Parallax translateY={["-100px", "100px"]}>
+                <Parallax translateY={["-100px", "100px"]} easing="easeInOut">
                   <div className="card-hover p-5 my-3">
                     <CreditCard size={64} />
                     <p className="f-16 mt-4">
@@ -134,7 +134,7 @@ export default function Home() {
                 </Parallax>
               </Col>
               <Col className="py-5 py-lg-2">
-                <Parallax translateY={["-130px", "130px"]}>
+                <Parallax translateY={["-130px", "130px"]} easing="easeInOut">
                   <div className="card-hover p-5 my-3">
                     <HandCoins size={64} />
                     <p className="f-16 mt-4">
@@ -145,7 +145,7 @@ export default function Home() {
                 </Parallax>
               </Col>
               <Col className="py-5 py-lg-2">
-                <Parallax translateY={["-100px", "100px"]}>
+                <Parallax translateY={["-100px", "100px"]} easing="easeInOut">
                   <div className="card-hover p-5 my-3">
                     <Handbag size={64} />
                     <p className="f-16 mt-4">
@@ -165,7 +165,7 @@ export default function Home() {
           <Container className="py-5">
             <Row>
               <Col sm="12" xl="7">
-                <Parallax translateY={["-100px", "100px"]}>
+                <Parallax translateY={["-120px", "120px"]} easing="easeInOut">
                   <div className="main-card p-5">
                     <h2 className="f-64">MACBOOKS</h2>
                     <p className="f-16">
@@ -218,15 +218,14 @@ export default function Home() {
               <Col sm="12" xl="4" className="p-5">
                 <Parallax
                   translateX={["-1000px", "10px"]}
-                  scale={[0, 1.1]}
-                  rotate={["-65deg", "0"]}
+                  rotate={["-85deg", "0"]}
                   rootMargin={{
-                    top: 15000,
+                    top: 900,
                     right: 0,
-                    bottom: 0,
+                    bottom: -900,
                     left: 0,
                   }}
-                  easing="easeInQuad"
+                  easing="easeInOut"
                 >
                   <img
                     src="/iphone-14-pro.png"
@@ -245,6 +244,7 @@ export default function Home() {
                     bottom: -900,
                     left: 0,
                   }}
+                  easing="easeInOut"
                 >
                   <h2 className="f-64">IPHONES</h2>
                   <p className="f-16">
@@ -294,7 +294,10 @@ export default function Home() {
       </section>
 
       <section className="ipads-bg">
-        <Container fluid className="py-5 m-0 d-flex align-items-center h-100">
+        <Container
+          fluid
+          className="py-5 m-0 d-flex align-items-center h-100 overflow-x-hidden"
+        >
           <Container className="py-5">
             <Row>
               <Col sm="6">
@@ -303,9 +306,10 @@ export default function Home() {
                   rootMargin={{
                     top: 1000,
                     right: 0,
-                    bottom: -800,
+                    bottom: -900,
                     left: 0,
                   }}
+                  easing="easeInOut"
                 >
                   <div className="main-card p-5">
                     <h2 className="f-64">IPADS</h2>
@@ -348,11 +352,23 @@ export default function Home() {
       </section>
 
       <section className="watch-bg">
-        <Container fluid className="py-5 m-0 d-flex align-items-center h-100">
+        <Container
+          fluid
+          className="py-5 m-0 d-flex align-items-center h-100 overflow-x-hidden"
+        >
           <Container className="py-5">
             <Row>
               <Col sm="12" xl="7">
-                <Parallax translateY={["-100px", "100px"]}>
+                <Parallax
+                  translateX={["2000px", "0px"]}
+                  rootMargin={{
+                    top: 1000,
+                    right: 0,
+                    bottom: -900,
+                    left: 0,
+                  }}
+                  easing="easeInOut"
+                >
                   <div className="main-card p-5">
                     <h2 className="f-64">APPLE WATCH</h2>
                     <p className="f-16">
@@ -401,14 +417,74 @@ export default function Home() {
       </section>
 
       <section>
+        <Container fluid className="p-5">
+          <div className="airpods-box p-5 text-center">
+            <Container fluid className="p-5">
+              <h2 className="f-64">AIRPODS</h2>
+              <p className="f-16">
+                Desfrute de uma experiência sonora sem limites e livre-se dos
+                fios.
+              </p>
+              <p className="f-16">
+                Os AirPods proporcionam áudio de alta qualidade e uma
+                conveniência excepcional. Seu design elegante e compacto os
+                tornam perfeitos para acompanhar seu estilo de vida ativo.
+                Conecte-se instantaneamente aos seus dispositivos Apple e
+                desfrute de uma conexão perfeita, reproduzindo música,
+                realizando chamadas e muito mais.
+              </p>
+              <p>
+                Além disso, com a tecnologia de cancelamento de ruído, você pode
+                se perder na música e nos podcasts, mergulhando em um som nítido
+                e envolvente.
+              </p>
+              <p>
+                Viva a sensação de liberdade e desfrute de uma qualidade sonora
+                impecável com os AirPods - uma experiência auditiva inigualável.
+              </p>
+              <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+                <ButtonPrimary
+                  title="comprar agora"
+                  type="button"
+                  onClick={() => {
+                    abrirChamadoWhatsapp(
+                      "Olá, gostaria de fazer um orçamento do produto - Airpods"
+                    );
+                  }}
+                  icon={<ArrowRight size={24} />}
+                />
+                <ButtonPlay
+                  link="https://youtu.be/ql6mhhHCldY"
+                  target="_blank"
+                  icon={<Play size={28} />}
+                />
+              </div>
+            </Container>
+          </div>
+        </Container>
+      </section>
+
+      <section>
         <Container fluid className="py-5">
           <Container className="py-5 d-flex flex-column align-items-center">
-            <img
-              src="/apple-products.png"
-              width="350"
-              alt="Produtos Apple"
-              draggable={false}
-            />
+            <Parallax
+              scale={[0, 1]}
+              rotate={["-400deg", "0"]}
+              rootMargin={{
+                top: 500,
+                right: 0,
+                bottom: -500,
+                left: 0,
+              }}
+              easing="easeInOut"
+            >
+              <img
+                src="/iphone15.png"
+                width="100%"
+                alt="Produtos Apple"
+                draggable={false}
+              />
+            </Parallax>
             <div className="text-center py-5">
               <p className="f-16">
                 Além disso, sabemos o quão importante é encontrar o equilíbrio
@@ -432,65 +508,6 @@ export default function Home() {
                 a sua satisfação é a nossa prioridade.
               </p>
             </div>
-          </Container>
-        </Container>
-      </section>
-
-      <section>
-        <Container fluid className="py-5">
-          <Container className="py-5">
-            <Row className="g-4">
-              <Col sm="12">
-                <div className="airpods-box p-5 text-center">
-                  <h2 className="f-64">AIRPODS</h2>
-                  <p className="f-16">
-                    Desfrute de uma experiência sonora sem limites e livre-se
-                    dos fios.
-                  </p>
-                  <p className="f-16">
-                    Os AirPods proporcionam áudio de alta qualidade e uma
-                    conveniência excepcional. Seu design elegante e compacto os
-                    tornam perfeitos para acompanhar seu estilo de vida ativo.
-                    Conecte-se instantaneamente aos seus dispositivos Apple e
-                    desfrute de uma conexão perfeita, reproduzindo música,
-                    realizando chamadas e muito mais.
-                  </p>
-                  <p>
-                    Além disso, com a tecnologia de cancelamento de ruído, você
-                    pode se perder na música e nos podcasts, mergulhando em um
-                    som nítido e envolvente.
-                  </p>
-                  <p>
-                    Viva a sensação de liberdade e desfrute de uma qualidade
-                    sonora impecável com os AirPods - uma experiência auditiva
-                    inigualável.
-                  </p>
-                  <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
-                    <ButtonPrimary
-                      title="comprar agora"
-                      type="button"
-                      onClick={() => {
-                        abrirChamadoWhatsapp(
-                          "Olá, gostaria de fazer um orçamento do produto - Airpods"
-                        );
-                      }}
-                      icon={<ArrowRight size={24} />}
-                    />
-                    <ButtonPlay
-                      link="https://youtu.be/ql6mhhHCldY"
-                      target="_blank"
-                      icon={<Play size={28} />}
-                    />
-                  </div>
-                </div>
-              </Col>
-              <Col sm="12" xl="8" className="d-none d-xl-flex">
-                <div className="iphones-box"></div>
-              </Col>
-              <Col sm="12" xl="4" className="d-none d-xl-flex">
-                <div className="ipads-box"></div>
-              </Col>
-            </Row>
           </Container>
         </Container>
       </section>
