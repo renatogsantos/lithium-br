@@ -488,6 +488,7 @@ export default function Home() {
                 bottom: -300,
                 left: 0,
               }}
+              easing={"easeInOut"}
             >
               <div className="d-flex justify-content-center">
                 <img
