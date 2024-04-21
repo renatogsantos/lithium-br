@@ -47,7 +47,7 @@ export default function Home() {
                 <Parallax translateY={["-200px", "100px"]} easing="easeInOut">
                   <div className="main-card p-5">
                     <h2 className="f-32">Prazer, somos a</h2>
-                    <h1 className="title slide-in-blurred-left">LITHIUM</h1>
+                    <h1 className="title">LITHIUM</h1>
                     <p className="mb-5">
                       Sua mais nova loja digital para compra de produtos Apple,
                       com preços justos e atendimento personalizado.
@@ -70,7 +70,7 @@ export default function Home() {
           </Container>
         </Container>
         <div className="card-shadow py-4">
-          <CaretDoubleDown size={32} color="#fff" className="slide-in-top" />
+          <CaretDoubleDown size={32} color="#fff" />
         </div>
       </main>
 
